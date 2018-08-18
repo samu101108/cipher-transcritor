@@ -1,0 +1,38 @@
+
+textarea{
+  margin-bottom: 1.125em;
+  padding: 6px;
+  width: 700px;
+  height: 6em;
+  font-size: 16px;
+  background-color: var(--fundo);
+  color: var(--link);
+  border: 1px solid #797979;
+}
+textarea:focus{
+  background-color: var(--fundo-claro);
+  color: var(--texto);
+}
+textarea#traduzido_id{
+  padding: 14px 14px 14px 16px;
+  min-height: 200px;
+}
+textarea#traduzido_id[placeholder]{
+  font-size: 16px;
+  background-color: var(--fundo);
+  font-size: 22px;
+}
+@media (max-width: 756px) {
+  textarea {
+    margin: auto;
+    margin-bottom: 8px;
+    width: 100%;
+    min-height: 6em;
+  }
+  select{
+    width: 100%;
+  }
+  #transcrever_id{
+    width: 100%;
+  }
+}

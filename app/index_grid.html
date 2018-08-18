@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="pt">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122474657-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122474657-1');
+  </script> -->
+
+  <meta charset="utf-8">
+  <meta name="description" content="App de transcição para Idiomas de mundos da ficção">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cipher Transcritor</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/grids.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <!-- <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container"> -->
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <!-- <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+            <a class="navbar-brand" href="#page-top">Cipher</a>
+          </div> -->
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <!-- <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden">
+                <a href="#page-top"></a>
+              </li>
+              <li class="page-scroll">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="page-scroll">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="page-scroll">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div> -->
+  <!-- /.navbar-collapse -->
+  <!-- </div> -->
+  <!-- /.container-fluid -->
+  <!-- </nav> -->
+  <div class="container">
+    <header>
+      <h3>Cipher</h3>
+      <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+        <li>
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <div>
+      <div>
+        <form id="form_id" class="" action="index.html" method="post">
+          <label for="entrada"></label>
+          <main>
+            <div class="textarea_1">
+              <textarea tabindex="0" id="entrada_id" name="entrada" placeholder="Seu texto a ser transcrito"></textarea>
+              <div class="">
+                <button type="button" name="button">+</button>
+              </div>
+            </div>
+              <div class="idioma_select">
+                <select id="linguagem_id" class="btn btn-light" name="linguagens" onchange="getLang(this)">
+                <option tabindex="1" value="0" selected>Idioma</option>
+                <option value="abiss_bar">Abissal (Barazhad)</option>
+                <option value="abiss_dae">Abissal (Daedra)</option>
+                <option value="drac_dov">Dracônico (Dovahzul)</option>
+                <option value="drac_iok">Dracônico (Iokharic)</option>
+                <option value="elf_rel">Elfico (Rellanic)</option>
+                <option value="elf_ten">Elfico (Tengwar)</option>
+                <option value="nan_dav">Nânico (Davek)</option>
+                <option value="nan_khu">Nânico (Khuzdul)</option>
+              </select>
+              <input id="transcrever_id" class="btn btn-light" type="button" name="" value="Traduzir" onclick="Transcrever()">
+            </div>
+            <label for="traduzido"></label>
+            <div class="textarea_action">
+              <div class="idioma_mundo" id="tag_idioma">Idioma tal</div>
+              <textarea class="textarea_2" id="traduzido_id" name="traduzido" disabled placeholder="A transcrição aparecerá aqui"></textarea>
+              <div class="output_action">
+                <button type="button" name="button">+</button>
+                <button type="button" name="button">-</button>
+                <button type="button" name="button">@</button>
+              </div>
+
+            </div>
+        </form>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <div class="footer text-center">
+        &copy;CipherTranscritor 2018
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- build:js scripts/vendor.js -->
+
+  <!-- bower:js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/html2canvas/build/html2canvas.js"></script>
+  <script src="/bower_components/promise/promise.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

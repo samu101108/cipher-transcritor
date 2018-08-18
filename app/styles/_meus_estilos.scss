@@ -1,0 +1,80 @@
+
+select {
+  width: 250px;
+}
+
+#transcrever_id {
+  width: 250px;
+
+  // INPUTS
+  select {
+    // border: 0px;
+    padding: 0 4px;
+    margin: 0;
+    height: 34px;
+  }
+}
+
+  [type="button"] {
+    padding: 0 4px;
+    margin: 0;
+    height: 34px;
+  }
+  //Para lista de Sobre
+  .lista {
+    list-style-type: georgian;
+  }
+
+  .btn-light {
+    margin-bottom: 4px;
+    background-color: var(--fundo);
+    color: var(--link);
+    border-color: #797979;
+  }
+
+  .btn-light:hover,
+  .btn-light:focus,
+  #transcrever_id.btn-light:focus{
+    background-color: var(--fundo-claro);
+    color: var(--texto);
+  }
+
+  .card {
+    border-bottom: 1px solid #888;
+    margin-bottom: 4px;
+  }
+
+  .card_header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted black;
+    background-color: #bebebe;
+    padding: 0 8px;
+  }
+
+  .card_content {
+    padding-left: 16px;
+  }
+
+  .card_footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8px;
+  }
+
+  input#transcrever_id:focus,
+  select:focus,
+  textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  a {color:var(--link)}
+  a:hover {color:var(--link-hover)}
+
+  body {
+    background-color: var(--fundo);
+    color: var(--texto);
+  }
