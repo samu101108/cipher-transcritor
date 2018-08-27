@@ -1,0 +1,17 @@
+input{
+  background-color: var(--fundo);
+  color: var(--texto);
+  padding-left: 4px;
+  border: 1px solid #797979;
+}
+
+.contact-mail{
+  min-width: 75%;
+  width: 80%;
+  max-width: 90%;
+}
+
+.form-group{
+  display: flex;
+  justify-content: space-between;
+}
