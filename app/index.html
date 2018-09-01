@@ -24,7 +24,6 @@
   <!-- Place favicon.ico in the root directory -->
 
   <!-- build:css styles/vendor.css -->
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 
   <!-- bower:css -->
   <!-- endbower -->
@@ -35,44 +34,40 @@
   <!-- endbuild -->
 
   <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
 
 <body>
   <div class="container">
-    <div class="header">
+    <header class="header">
       <h3>Cipher</h3>
       <nav class="nav">
-        <label class="label-menu" for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle">
         <div class="menu">
             <a class="active"  href="index.html">Home</a>
             <a href="sobre.html">Sobre</a>
             <a href="contato.html">Contato</a>
         </div>
 
-      <!-- <ul class="nav nav-pills float-right">
-        <li><a class="nav-link active" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="sobre.html">Sobre</a></li>
-        <li><a class="nav-link" href="contato.html">Contato</a></li>
-      </ul> -->
     </nav>
-    </div>
+  </header>
 
-    <div class="row marketing">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <main>
         <form id="form_id" class="" action="index.html" method="post">
           <label for="entrada"></label>
-          <main>
-            <div class="textarea_action" id="caixa1">
-              <textarea tabindex="0" id="entrada_id" name="entrada" placeholder="Seu texto a ser transcrito"></textarea>
-              <div class="trash-icon">
+
+            <div id="caixa1">
+              <textarea tabindex="0"
+                        id="entrada_id"
+                        name="entrada"
+                        placeholder="Seu texto a ser transcrito">
+              </textarea>
+              <div class="icons">
                 <a href="javascript:apagar()">
-                  <img src="/images/erase.svg" alt="apagar">
-                  </a>
+                  <img width="32" height="32" src="/images/erase.svg" alt="apagar">
+                </a>
               </div>
             </div>
+
             <div>
               <div class="idioma_select">
                 <select id="linguagem_id" class="btn btn-light" name="linguagens" onchange="getLang(this)">
@@ -95,43 +90,44 @@
             <span>
               Origem: <i id="tag_idioma">Selecione idioma</i>
             </span>
-            <div class="textarea_action">
-              <textarea id="traduzido_id" name="traduzido" disabled placeholder="A transcrição aparecerá aqui"></textarea>
-              <div class="output-icons">
-                <a href="javascript:aumentar()"><img src="/images/plus.svg" alt="Aumentar"></a>
-                <a href="javascript:diminuir()"><img src="/images/minus.svg" alt="Diminuir"></a>
-                <a href="javascript:salvar_imagem()"><img src="/images/export.svg" alt="Salvar texto em imagem"></a>
+            <div id="caixa2">
+              <textarea id="traduzido_id"
+                        name="traduzido" disabled
+                        placeholder="A transcrição aparecerá aqui">
+              </textarea>
+              <div class="icons output-icons">
+                <a href="javascript:aumentar()"><img width="32" height="32" src="/images/plus.svg" alt="Aumentar"></a>
+                <a href="javascript:diminuir()"><img width="32" height="32" src="/images/minus.svg" alt="Diminuir"></a>
+                <a href="javascript:salvar_imagem()"><img width="32" height="32" src="/images/export.svg" alt="Salvar texto em imagem"></a>
                 <a id="test"></a><!--O html2canvas precisa disso...-->
               </div>
 
             </div>
         </form>
-        </main>
-      <aside class="">
-        <div id="disqus_thread"></div>
-<script>
+    </main>
+    <aside class="disqus_css">
+      <div id="disqus_thread"></div>
+      <script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://https-cipher-ml-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-cipher-ml-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-      </aside>
-      </div>
-    </div>
+</aside>
     <footer>
       <div class="footer text-center">
         &copy;CipherTranscritor 2018
@@ -141,27 +137,15 @@ s.setAttribute('data-timestamp', +new Date());
 
 
   <!-- build:js scripts/vendor.js -->
-  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 
   <!-- bower:js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
   <script src="/bower_components/html2canvas/build/html2canvas.js"></script>
   <script src="/bower_components/promise/promise.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
   <!-- build:js scripts/plugins.js -->
-  <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
 
   <!-- endbuild -->
 

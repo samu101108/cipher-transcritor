@@ -3,33 +3,18 @@
 
 :root {
   --fundo: #232323;
-  // --fundo: navy;
   --fundo-claro: #333;
   --texto: #fff;
   --link: #80bdff;
-  // 128,189,255
   --link-hover: #fff;
 }
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
 /* Space out content a bit */
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   font-family: 'Open Sans', sans-serif;
-}
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.footer,
-.header,
-.marketing {
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 /* Custom page header */
 .header {
@@ -41,6 +26,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 3rem;
+  font-size: 1.425em;
 }
 /* Custom page footer */
 .footer {
@@ -48,60 +34,20 @@ body {
   color: #777;
   border-top: 0.05rem solid #797979;
 }
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
-  }
+
+
+#caixa1,
+#caixa2{
+  display: flex;
+  min-height: 156px;
 }
 
-.container-narrow > hr {
-  margin: 2rem 0;
-}
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 0.05rem solid #797979;
-}
-
-.jumbotron .btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1.5rem;
-}
-/* Supporting marketing content */
-.marketing {
-  margin: 3rem 0;
-}
-
-.marketing p + h4 {
-  margin-top: 1.5rem;
-}
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .footer,
-  .header,
-  .marketing {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 2rem;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
 
 @import "idiomas.scss";
 @import "meus_estilos.scss";
 @import "textarea.scss";
-@import "select-option.scss";
 @import "menu.scss";
-@import "navegacao.scss";
-@import "textarea_action.scss";
 @import "icons.scss";
 @import "canvas.scss";
 @import "forms.scss";
+@import "responsive.scss";

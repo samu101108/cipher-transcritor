@@ -6,8 +6,8 @@ function getLang(selectObject) {
     alert('Por favor Selecione um idioma.');
   }
   if (opt_value == opt_value) {
-    console.log(opt_value);
-    // return opt_value;
+     //Exibe o valor escolhido para serusado na classe
+     // console.log(opt_value);
   }
   // Tags com o mundo do Idioma que fica acima da textearea de saída
   var jrrt = '<span>J. R. R. Tolkien</span>';

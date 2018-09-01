@@ -1,6 +1,7 @@
 
 select {
   width: 250px;
+  height: 34px;
 }
 
 #transcrever_id {
@@ -30,6 +31,17 @@ select {
     background-color: var(--fundo);
     color: var(--link);
     border-color: #797979;
+    width: 250px;
+    padding: 0 4px;
+    margin: 0;
+    height: 34px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  [type="submit"] {
+    border: 1px solid #797979;
+
   }
 
   .btn-light:hover,
@@ -37,29 +49,6 @@ select {
   #transcrever_id.btn-light:focus{
     background-color: var(--fundo-claro);
     color: var(--texto);
-  }
-
-  .card {
-    border-bottom: 1px solid #888;
-    margin-bottom: 4px;
-  }
-
-  .card_header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px dotted black;
-    background-color: #bebebe;
-    padding: 0 8px;
-  }
-
-  .card_content {
-    padding-left: 16px;
-  }
-
-  .card_footer {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 8px;
   }
 
   input#transcrever_id:focus,
