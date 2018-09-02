@@ -6,10 +6,8 @@ header {
 }
 main {
   grid-area: m;
-  // width: 600px;
 }
 aside{
-  // display: none;
   grid-area: a;
   min-width: 200px;
   max-width: 100%;
@@ -24,16 +22,15 @@ footer {
   max-width: 1041px;
   margin: 0 auto;
   display: grid;
-  // justify-content: space-between;
   grid-gap: 10px;
   grid-template-areas:
   "h h"
   "m a"
   "f f";
 }
-@media (max-width: 500px) {
-  background-color: red;
-}
+// @media (max-width: 500px) {
+  // background-color: red;
+// }
 @media (max-width: 1230px) {
   .container {
     grid-template-areas:

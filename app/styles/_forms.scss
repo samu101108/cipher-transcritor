@@ -10,6 +10,10 @@ input{
   margin-bottom: 4px;
 }
 
+input:focus{
+  background-color: var(--fundo-claro);
+  color: var(--texto);
+}
 .contact-mail{
   // min-width: 75%;
   // width: 80%;

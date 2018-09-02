@@ -1,8 +1,7 @@
 .header{
   display: flex;
   justify-content: space-between;
-  line-height: 70px;
-  height: 70px;
+  line-height: 60px;
   text-align: right;
 }
 .menu{
@@ -12,7 +11,6 @@
 .menu a {
   text-decoration: none;
   margin: 0 5px;
-  line-height: 70px;
   // clear: right;
 }
 .active{
@@ -25,5 +23,10 @@
     display: inline;
     margin: 0;
     padding: 0;
+  }
+}
+@media (min-width: 700px) {
+  .header{
+    line-height: 70px;
   }
 }
