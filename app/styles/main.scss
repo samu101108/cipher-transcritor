@@ -13,7 +13,7 @@
 /* Space out content a bit */
 body {
   // padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  // padding-bottom: 1.5rem;
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
   font-family: 'Open Sans', sans-serif;
 }
@@ -30,6 +30,7 @@ body {
 /* Custom page footer */
 .footer {
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   color: #777;
   border-top: 0.05rem solid #797979;
 }
@@ -40,7 +41,9 @@ body {
   display: flex;
   min-height: 156px;
 }
-
+.text-right{
+  text-align: right;
+}
 
 @import "idiomas.scss";
 @import "meus_estilos.scss";
