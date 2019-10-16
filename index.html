@@ -1,0 +1,54 @@
+<!doctype html>
+<html amp lang="pt">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122474657-1"></script>
+
+  <meta charset="utf-8">
+  <title>Transcritor</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="App de transcrição para idiomas de mundos da ficção">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h3>Transcritor</h3>
+
+    </header>
+    <main>
+      <form id="form_id" action="index.html" method="post"><label for="entrada"></label>
+        <div id="caixa1"><textarea tabindex="0" id="entrada_id" name="entrada" placeholder="Digite seu texto..."></textarea>
+          <div class="icons"><a href="javascript:apagar()"><img width="32" height="32" src="/images/erase.svg" alt="apagar"></a></div>
+        </div>
+        <div>
+          <div class="idioma_select"><select id="linguagem_id" class="btn btn-light" name="linguagens" onchange="getLang(this)">
+              <option tabindex="1" value="0" selected="selected">Idioma</option>
+              <option value="abiss_bar">Abissal (Barazhad)</option>
+              <option value="abiss_dae">Abissal (Daedra)</option>
+              <option value="drac_dov">Dracônico (Dovahzul)</option>
+              <option value="drac_iok">Dracônico (Iokharic)</option>
+              <option value="elf_rel">Elfico (Rellanic)</option>
+              <option value="elf_ten">Elfico (Tengwar)</option>
+              <option value="nan_dav">Nânico (Davek)</option>
+              <option value="nan_khu">Nânico (Khuzdul)</option>
+              <option value="kli_piq">Klingon (PIqaD)</option>
+              <option value="kli_kli">Klingon (Klinzhai)</option>
+            </select></div><input id="transcrever_id" class="btn btn-light" type="button" name="" value="Traduzir" onclick="Transcrever()">
+        </div><label for="traduzido"></label> <span>Origem: <i id="tag_idioma">Selecione idioma</i></span>
+        <div id="caixa2"><textarea id="traduzido_id" name="traduzido" disabled="disabled" placeholder="A transcrição aparecerá aqui..."></textarea>
+          <div class="icons output-icons"><a href="javascript:aumentar()"><img width="32" height="32" src="/images/plus.svg" alt="Aumentar"></a><a href="javascript:diminuir()"><img width="32" height="32" src="/images/minus.svg" alt="Diminuir"></a><a
+              href="javascript:salvar_imagem()"><img width="32" height="32" src="/images/export.svg" alt="Salvar texto em imagem"></a><a id="test"></a></div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="footer text-right"><a class="developer" href="https://github.com/samu101108">@samu101108</a></div>
+    </footer>
+  </div>
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

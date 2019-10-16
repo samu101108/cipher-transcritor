@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* vermelho #821e1e */
+:root {
+  --fundo: #fff;
+  --fundo-claro: #d6c9c9;
+  --texto: #821e1e;
+  --link: #821e1e;
+  --placeh: #821e1e;
+  --link-hover: #2e0b0b;
+}
+
+body {
+  font-family: Open Sans, sans-serif
+}
+
+.header {
+  border-bottom: .05rem solid #797979
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.425em
+}
+
+.footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #797979
+}
+
+#caixa1, #caixa2 {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 156px
+}
+
+.text-right {
+  text-align: right
+}
+
+#tag_idioma {
+  height: 24px;
+  margin-top: -24px
+}
+
+@font-face {
+  font-family: abissal_barazhad;
+  src: url(../fonts/DungeonsAndDragons/Abissal_Barazhad/Barazhad.otf)
+}
+
+.abiss_bar {
+  font-family: abissal_barazhad
+}
+
+@font-face {
+  font-family: draconico_iokharic;
+  src: url(../fonts/DungeonsAndDragons/Draconico_Iokharic/Iokharic.otf)
+}
+
+.drac_iok {
+  font-family: draconico_iokharic
+}
+
+@font-face {
+  font-family: elfico_rellanic;
+  src: url(../fonts/DungeonsAndDragons/Elfico_Rellanic/Rellanic.otf)
+}
+
+.elf_rel {
+  font-family: elfico_rellanic
+}
+
+@font-face {
+  font-family: nanico_davek;
+  src: url(../fonts/DungeonsAndDragons/Nanico_Davek/Davek.otf)
+}
+
+.nan_dav {
+  font-family: nanico_davek
+}
+
+@font-face {
+  font-family: elfico_tengwar;
+  src: url(../fonts/R_R_Tolkien/Elfico_Tengwar/tngani.ttf)
+}
+
+.elf_ten {
+  font-family: elfico_tengwar
+}
+
+@font-face {
+  font-family: nanico_khuzdul;
+  src: url(../fonts/R_R_Tolkien/Nanico_Khuzdul/DTSDwarvish.ttf)
+}
+
+.nan_khu {
+  font-family: nanico_khuzdul
+}
+
+@font-face {
+  font-family: abissal_daedra;
+  src: url(../fonts/Skyrim/Abissal_Daedra/Daedra.otf)
+}
+
+.abiss_dae {
+  font-family: abissal_daedra
+}
+
+@font-face {
+  font-family: draconico_dovahzul;
+  src: url(../fonts/Skyrim/Draconico_Dovahzul/Dovahzul.ttf)
+}
+
+.drac_dov {
+  font-family: draconico_dovahzul
+}
+
+@font-face {
+  font-family: klingon_klinzhai;
+  src: url(../fonts/StarTrek/Klingon_Klinzhai/klingon_klinzhai.TTF)
+}
+
+.kli_kli {
+  font-family: klingon_klinzhai
+}
+
+@font-face {
+  font-family: klingon_piqad;
+  src: url(../fonts/StarTrek/Klingon_PIqaD/klingon_pIqaD.ttf)
+}
+
+.kli_piq {
+  font-family: klingon_piqad
+}
+
+select {
+  height: 34px
+}
+
+#transcrever_id, select {
+  width: 250px
+}
+
+#transcrever_id select, [type=button] {
+  padding: 0 4px;
+  margin: 0;
+  height: 34px
+}
+
+.lista {
+  list-style-type: georgian
+}
+
+.btn-light {
+  background-color: var(--fundo);
+  color: var(--link);
+  border-color: #797979;
+  width: 250px;
+  padding: 0 4px;
+  margin: 0;
+  height: 34px;
+  font-size: 16px;
+  margin-bottom: 4px
+}
+
+[type=submit] {
+  border: 1px solid #797979
+}
+
+#transcrever_id.btn-light:focus, .btn-light:focus, .btn-light:hover {
+  background-color: var(--fundo-claro);
+  color: var(--texto)
+}
+
+input#transcrever_id:focus, select:focus, textarea:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+a {
+  color: var(--link)
+}
+/* a:visited{
+  text-decoration: line-through;
+} */
+a:hover {
+  color: var(--link-hover)
+}
+
+body {
+  color: var(--texto)
+}
+
+body, textarea {
+  background-color: var(--fundo)
+}
+
+textarea {
+  box-sizing: border-box;
+  margin-bottom: 1.125em;
+  padding-left: 12px;
+  width: 100%;
+  height: 6em;
+  font-size: 16px;
+  color: var(--link);
+  border: 1px solid #797979
+}
+
+textarea:focus {
+  background-color: var(--fundo-claro);
+  color: var(--texto)
+}
+
+textarea#entrada_id {
+  min-height: 156px
+}
+
+div#traduzido_id, textarea#traduzido_id {
+  min-height: 156px;
+  padding: 16px
+}
+
+div#traduzido_id {
+  width: 100%;
+  border: 1px solid #777
+}
+
+@media (max-width:756px) {
+  textarea {
+    width: 100%;
+    min-height: 6em
+  }
+}
+
+input {
+  outline: none;
+  padding: 12px;
+  border-radius: 3px;
+  border: 1px solid #000
+}
+
+::-webkit-input-placeholder {
+  font-family: sans-serif;
+  color: var(--placeh);
+  transition: opacity .25s ease-in-out
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: .7
+}
+
+:-ms-input-placeholder {
+  font-family: sans-serif;
+  color: var(--placeh);
+  transition: opacity .25s ease-in-out
+}
+
+:focus:-ms-input-placeholder {
+  opacity: .7
+}
+
+::-moz-placeholder {
+  font-family: sans-serif;
+  color: var(--placeh);
+  opacity: 1;
+  transition: opacity .25s ease-in-out
+}
+
+:focus::-moz-placeholder {
+  opacity: .7
+}
+
+:-moz-placeholder {
+  font-family: sans-serif;
+  color: var(--placeh);
+  opacity: 1;
+  transition: opacity .25s ease-in-out
+}
+
+:focus:-moz-placeholder {
+  opacity: .7
+}
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 60px;
+  text-align: right
+}
+
+.menu {
+  display: inline-block
+}
+
+.menu a {
+  text-decoration: none;
+  margin: 0 5px
+}
+
+.active {
+  font-weight: bolder;
+  color: var(--text)
+}
+
+@media (max-width:300px) {
+  .menu a {
+    display: inline;
+    margin: 0;
+    padding: 0
+  }
+}
+
+@media (min-width:700px) {
+  .header {
+    line-height: 70px
+  }
+}
+
+.icons img {
+  width: 2rem;
+  margin-bottom: 8px;
+  margin-left: 8px
+}
+
+.output-icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%
+}
+
+input {
+  background-color: var(--fundo);
+  color: var(--link);
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #797979;
+  width: 100%;
+  height: 34px;
+  margin-bottom: 4px
+}
+
+input:focus {
+  background-color: var(--fundo-claro);
+  color: var(--texto)
+}
+
+.form-group {
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.form-group, header {
+  display: -ms-flexbox;
+  display: flex
+}
+
+header {
+  grid-area: h;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+main {
+  grid-area: m
+}
+
+aside {
+  grid-area: a;
+  min-width: 200px;
+  max-width: 100%;
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 1px dotted #fff
+}
+
+footer {
+  grid-area: f
+}
+
+.container {
+  max-width: 1041px;
+  margin: 0 auto;
+  grid-gap: 10px;
+  grid-template-areas: "h h""m a""f f"
+}
+
+@media (max-width:1230px) {
+  .container {
+    grid-template-areas: "h h""m m""a a""f f"
+  }
+
+  aside {
+    margin-left: 0;
+    border-left: none
+  }
+}
+
+body, html {
+  height: 100%
+}
+
+.container {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto
+}
+.developer{
+  font-size: 80%;
+}
