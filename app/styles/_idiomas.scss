@@ -1,0 +1,87 @@
+#tag_idioma{
+  height: 24px;
+  margin-top: -24px;
+}
+///////////
+//Dungeons and Dragons
+///////////
+@font-face {
+  font-family: abissal_barazhad;
+  src: url("../fonts/DungeonsAndDragons/Abissal_Barazhad/Barazhad.otf");
+}
+.abiss_bar{
+  font-family: abissal_barazhad;
+}
+@font-face {
+  font-family: draconico_iokharic;
+  src: url("../fonts/DungeonsAndDragons/Draconico_Iokharic/Iokharic.otf");
+}
+.drac_iok{
+  font-family: draconico_iokharic;
+}
+@font-face {
+  font-family: elfico_rellanic;
+  src: url("../fonts/DungeonsAndDragons/Elfico_Rellanic/Rellanic.otf");
+}
+.elf_rel{
+  font-family: elfico_rellanic;
+}
+@font-face {
+  font-family: nanico_davek;
+  src: url("../fonts/DungeonsAndDragons/Nanico_Davek/Davek.otf");
+}
+.nan_dav{
+  font-family: nanico_davek;
+}
+///////////
+//R. R. Tolkien
+///////////
+@font-face {
+  font-family: elfico_tengwar;
+  src: url("../fonts/R_R_Tolkien/Elfico_Tengwar/tngani.ttf");
+}
+.elf_ten{
+  font-family: elfico_tengwar;
+}
+@font-face {
+  font-family: nanico_khuzdul;
+  src: url("../fonts/R_R_Tolkien/Nanico_Khuzdul/DTSDwarvish.ttf");
+}
+.nan_khu{
+  font-family: nanico_khuzdul;
+}
+
+///////////
+//Skyrim
+///////////
+@font-face {
+  font-family: abissal_daedra;
+  src: url("../fonts/Skyrim/Abissal_Daedra/Daedra.otf");
+}
+.abiss_dae{
+  font-family: abissal_daedra;
+}
+@font-face {
+  font-family: draconico_dovahzul;
+  src: url("../fonts/Skyrim/Draconico_Dovahzul/Dovahzul.ttf");
+}
+.drac_dov{
+  font-family: draconico_dovahzul;
+}
+///////////
+//Star Trek
+///////////
+@font-face {
+  font-family: klingon_klinzhai;
+  src: url("../fonts/StarTrek/Klingon_Klinzhai/klingon_klinzhai.TTF");
+}
+.kli_kli{
+  font-family: klingon_klinzhai;
+}
+@font-face {
+  font-family: klingon_piqad;
+    src: url("../fonts/StarTrek/Klingon_PIqaD/klingon_pIqaD.ttf");
+}
+.kli_piq{
+  font-family: klingon_piqad;
+}
