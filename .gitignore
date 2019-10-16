@@ -2,3 +2,15 @@ node_modules
 .tmp
 bower_components
 test/bower_components
+projeto_completo
+app
+bower.json
+CNAME
+dist
+gulpfile.js
+LICENSE
+node_modules
+package.json
+package-lock.json
+README.md
+test
